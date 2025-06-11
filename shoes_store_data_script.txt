@@ -1,0 +1,19 @@
+create database shoes_store;
+use shoes_store;
+
+CREATE TABLE shoes (
+    shoes_id INT AUTO_INCREMENT PRIMARY KEY,
+    shoes_name VARCHAR(100) NOT NULL,
+    shoes_price DECIMAL(10, 2) NOT NULL,
+    shoes_brand VARCHAR(50) NOT NULL,
+    shoes_description VARCHAR(255),
+    shoes_img  VARCHAR(255)
+);
+
+INSERT INTO shoes (shoes_name, shoes_price, shoes_brand, shoes_description, shoes_img) VALUES
+('4DFWD PULSE SHOES', 160.00, 'adidas', 'This product is excluded from all promotional discounts and offers', 'static/images/img1.jpg'),
+('FORUM MID SHOES', 100.00, 'Adidas', 'This product is excluded from all promotional discounts and offers', 'static/images/img2.jpg'),
+('SUPERNOVA SHOES', 150.00, 'Adidas', 'NMD City Stock 2', 'static/images/img3.jpg'),
+('BEACH SEASON SHOES', 160.00, 'Adidas', 'Summer collection', 'static/images/img4.jpg'),
+('BLACK THADER', 120.00, 'Adidas', 'Speed Run', 'static/images/img5.jpg'),
+('FLOWAIR MID SHOES', 160.00, 'Adidas', 'Speed Run', 'static/images/img6.jpg');
